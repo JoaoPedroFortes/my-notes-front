@@ -1,0 +1,24 @@
+.note-box {
+  background-color: rgb(225, 255, 143);
+  position: absolute;
+
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+}
+
+#header {
+  border-bottom: 1px solid black;
+  cursor: move;
+  z-index: 10;
+  padding: 10px;
+}
+
+#content {
+  display: absolute;
+  text-align: left;
+}
+
+
+textarea {
+    border-color:  transparent !important;
+}

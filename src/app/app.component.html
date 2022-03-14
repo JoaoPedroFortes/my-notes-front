@@ -1,1 +1,16 @@
-<p> ola mundo </p>
+<ng-container>
+  <div
+    style="display: flex; width: 100%; justify-content: space-between; align-items: center"
+  >
+    <div *ngFor="let el of noteList; let index = index; let last = last">
+      <div>
+        <app-new-note
+          [id]="index"
+          [note]="el"
+          (drag)="teste($event)"
+          [ngClass]="last ? 'col-focus' : 'col-blur'"
+        ></app-new-note>
+      </div>
+    </div>
+  </div>
+</ng-container>
